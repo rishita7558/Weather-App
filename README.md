@@ -3,6 +3,7 @@
 A simple, responsive weather application built using *HTML, **CSS, and **JavaScript*. It fetches real-time weather data using a public API and displays it in a clean, mobile-friendly UI.
 
 ---
+## Live Demo
 
 🔗 [Live Demo on Vercel](https://weather-app-ten-xi-84.vercel.app/)
 
