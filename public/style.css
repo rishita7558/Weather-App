@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card{
+    width: 33vw;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    margin: 12vh 35vw 10vh 35vw;
+    border-radius: 1rem;
+    padding: 3rem 1.7rem;
+    text-align: center;
+    color: white;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border: 0;
+    max-width: 85%;
+    background: #ebfffc;
+    color: #555;
+    padding: 0.4rem 1.5rem;
+    height: 3rem;
+    border-radius: 2rem;
+    flex: 1;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+}
+
+.search-icon button{
+    aspect-ratio: 1/1;
+    background-color: #ebfffc;
+    font-size: 1.65rem;
+    padding:0.5rem 0.6rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.search-icon button:active{
+    opacity: 0.75;
+    color:rgb(103, 102, 101);
+    border: 2px solid black;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+}
+.weather h1{
+    font-size: 4rem;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 2.75rem;
+    font-weight: 400;
+    margin-top: 0.1rem;
+}
+.weather i{
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 4.5rem;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-right: 0.75rem;
+}
+.col i{
+    font-size: 2.8rem;
+    margin-right: 0.5rem;
+}
+.col p{
+    font-size: 1.5rem;
+}
+.col-text{
+    margin-top: 1rem;
+}
+.weather{
+    display: none;
+}
+
+@media (max-width: 550px) {
+  .card {
+    width: 90vw;
+    margin: 5vh auto;
+  }
+}
+@media ((min-width: 551px) and (max-width:650px) ) {
+  .card {
+    width: 75vw;
+    margin: 5vh auto;
+  }
+}
+@media ((min-width: 651px) and (max-width:900px) ) {
+  .card {
+    width: 55vw;
+    margin: 5vh auto;
+  }
+}
+@media ((min-width: 901px) and (max-width:1250px) ) {
+  .card {
+    width: 45vw;
+    margin: 5vh auto;
+  }
+}
+@media(max-width:450px){
+    .col-text p{
+        font-size: 1.2rem;
+        margin-top: 0.2rem;
+    }
+    .col i{
+        font-size: 2.1rem;
+    }
+    .details{
+        padding:0;
+    }
+    .search input{
+        margin-right:0.5rem;
+    }
+}
