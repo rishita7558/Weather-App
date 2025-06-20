@@ -20,10 +20,18 @@ async function checkWeather (city){
     document.querySelector(".humidity").innerHTML = data.main.humidity+ "%";
     document.querySelector(".wind").innerHTML = data.wind.speed+" km/h";
 
+    let currentTime = data.dt;
+    let sunrise = data.sys.sunrise;
+    let sunset = data.sys.sunset;
+
     if(data.weather[0].main=="Clouds")
         weatherIcon.classList.replace(weatherIcon.classList.item(2),"fa-cloud");
-    else if(data.weather[0].main=="Clear")
-        weatherIcon.classList.replace(weatherIcon.classList.item(2),"fa-sun");
+    else if(data.weather[0].main=="Clear"){
+        if(currentTime >= sunrise && currentTime < sunset)
+            weatherIcon.classList.replace(weatherIcon.classList.item(2),"fa-sun");
+        else
+            weatherIcon.classList.replace(weatherIcon.classList.item(2),"fa-moon");
+    }
     else if(data.weather[0].main=="Rain")
         weatherIcon.classList.replace(weatherIcon.classList.item(2),"fa-cloud-rain");
     else if(data.weather[0].main=="Drizzle")
@@ -32,6 +40,14 @@ async function checkWeather (city){
         weatherIcon.classList.replace(weatherIcon.classList.item(2),"fa-smog");
 
     weather.style.display = "block";
+
+    if (currentTime >= sunrise && currentTime < sunset) {
+        document.body.classList.add("day");
+        document.body.classList.remove("night");
+    } else {
+        document.body.classList.add("night");
+        document.body.classList.remove("day");
+    }
 }
 
 searchBtn.addEventListener("click",()=>{

@@ -11,6 +11,16 @@
     padding: 3rem 1.7rem;
     text-align: center;
     color: white;
+    transition: background 0.5s ease;
+}
+body.day .card {
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb); 
+    color: #222;
+}
+
+body.night .card {
+    background: linear-gradient(135deg, #1e3c72, #2a5298); 
+    color: #eee;
 }
 .search{
     width: 100%;
