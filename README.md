@@ -1,6 +1,6 @@
 # 🌦 Responsive Weather App
 
-A simple, responsive weather application built using *HTML, **CSS, and **JavaScript*. It fetches real-time weather data using a public API and displays it in a clean, mobile-friendly UI.
+A simple, responsive weather application built using *HTML*, *CSS*, and *JavaScript*. It fetches real-time weather data using a public API and displays it in a clean, mobile-friendly UI.
 
 ---
 ## Live Demo
@@ -25,7 +25,7 @@ A simple, responsive weather application built using *HTML, **CSS, and **JavaScr
 - *HTML5* – Markup structure
 - *CSS3* – Styling and layout
 - *JavaScript* – Logic and API integration
-- *Currency API* – OpenWeatherMap API
+- *Weather API* – OpenWeatherMap API
 - *Deployment* - GitHub
 - *Icons* - FontAwesome
 
