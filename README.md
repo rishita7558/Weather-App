@@ -1,6 +1,6 @@
 # 🌦 Responsive Weather App
 
-A simple, responsive weather application built using *HTML, **CSS, and **JavaScript*. It fetches real-time weather data using a public API and displays it in a clean, mobile-friendly UI.
+A simple, responsive weather application built using *HTML*, *CSS*, and *JavaScript*. It fetches real-time weather data using a public API and displays it in a clean, mobile-friendly UI.
 
 ---
 ## Live Demo
