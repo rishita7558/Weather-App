@@ -1,6 +1,6 @@
 # 🌦 Responsive Weather App
 
-A simple, responsive weather application built using *HTML*, *CSS*, and *JavaScript*. It fetches real-time weather data using a public API and displays it in a clean, mobile-friendly UI.
+A sleek and responsive weather application built using *HTML*, *CSS*, and *JavaScript*. It fetches real-time weather data using a public API and displays it in a clean, mobile-friendly UI.
 
 ---
 ## Live Demo
@@ -13,10 +13,11 @@ A simple, responsive weather application built using *HTML*, *CSS*, and *JavaScr
 
 - 📍 Search weather by city name  
 - 🌡 Real-time temperature, humidity, and wind speed  
-- 🌄 Dynamic weather icons   
+- 🌄 Dynamic weather icons and illustrations  
 - 📱 Fully responsive design   
+- 🌙 Dynamic background based on day/night
 - 🧠 Built using Vanilla JS — no external frameworks  
-- 🔒 API key hidden using .gitignore and config.js
+- 🔒 API key hidden using *.env variables in Vercel*
 
 ---
 
