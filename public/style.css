@@ -121,7 +121,7 @@ body.night .card {
 }
 @media(max-width:450px){
     .col-text p{
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-top: 0.2rem;
     }
     .col i{
