@@ -17,44 +17,56 @@ body.day .card {
     background: linear-gradient(135deg, #a1c4fd, #c2e9fb); 
     color: #222;
 }
-
 body.night .card {
     background: linear-gradient(135deg, #1e3c72, #2a5298); 
     color: #eee;
 }
-.search{
+.search {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    position: relative;
 }
-.search input{
+.search input {
+    width: 0;
+    opacity: 0;
     border: 0;
-    max-width: 85%;
     background: #ebfffc;
     color: #555;
-    padding: 0.4rem 1.5rem;
+    padding: 0;
     height: 3rem;
     border-radius: 2rem;
-    flex: 1;
-    margin-right: 1rem;
     font-size: 1.1rem;
+    outline: none;
+    transition: width 0.4s ease, opacity 0.4s ease, padding 0.4s ease, margin 0.4s ease;
+    margin-left: 0;
+}
+.search.expanded input {
+    width: 85%;
+    opacity: 1;
+    padding: 0.4rem 1.5rem;
+    margin-right: 1rem; 
 }
 
-.search-icon button{
+.search-icon button {
     aspect-ratio: 1/1;
     background-color: #ebfffc;
     font-size: 1.65rem;
-    padding:0.5rem 0.6rem;
+    padding: 0.5rem 0.6rem;
     border-radius: 50%;
     border: none;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
-.search-icon button:active{
+
+.search-icon button:active {
     opacity: 0.75;
-    color:rgb(103, 102, 101);
+    color: rgb(103, 102, 101);
     border: 2px solid black;
 }
+
+
 .details{
     display: flex;
     align-items: center;
